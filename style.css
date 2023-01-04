@@ -1,0 +1,152 @@
+/* Video style */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  /* Menu */
+ 
+#menu {
+
+	color: #FFF;
+	height: 45px;
+	border-radius: 10px;
+    margin-left: 500px;
+   
+    
+}
+
+
+#menu ul, #menu li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none
+}
+#menu ul {
+	width: 100%;
+    display: inline-block;
+}
+#menu li {
+	float: left;
+	display: inline;
+	
+}
+#menu a {
+	display: inline-block;
+    position: relative;
+	line-height: 45px;
+	padding: 0 16px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 17px;
+    width: 100%;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+ 
+  width:50%;
+  height: 0.1em;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+
+
+a:hover::after,
+a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+/* Scale from center */
+li:nth-child(1) a::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+  }
+  
+  li:nth-child(1) a:hover::after,
+  li:nth-child(1) a:focus::after{
+    transform: scale(1);
+  }
+
+/* Scale from center */
+li:nth-child(2) a::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+  }
+  
+  li:nth-child(2) a:hover::after,
+  li:nth-child(2) a:focus::after{
+    transform: scale(1);
+  }
+
+/* Scale from center */
+li:nth-child(3) a::after {
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+li:nth-child(3) a:hover::after,
+li:nth-child(3) a:focus::after{
+  transform: scale(1);
+}
+
+/* Scale from center */
+li:nth-child(4) a::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+  }
+  
+  li:nth-child(4) a:hover::after,
+  li:nth-child(4) a:focus::after{
+    transform: scale(1);
+  }
+
+
+#menu input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 45px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer
+}
+#menu label {
+	display: none;
+	line-height: 45px;
+	text-align: center;
+	position: absolute;
+	left: 35px
+}
+
+
+#animation-name{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 56px;
+    margin-top: 60px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.menu-item li a{
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+h1{
+    position: relative;
+    font-size: 60px;
+    color: #FFF;
+}
