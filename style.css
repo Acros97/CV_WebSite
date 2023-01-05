@@ -14,36 +14,41 @@
 	color: #FFF;
 	height: 45px;
 	border-radius: 10px;
-    margin-left: 500px;
-   
-    
+  
 }
 
 
 #menu ul, #menu li {
 	margin: 0 auto;
 	padding: 0;
-	list-style: none
+	list-style: none;
+  text-align: center;
+	  
 }
 #menu ul {
-	width: 100%;
-    display: inline-block;
+	width: 100%;  
 }
+
 #menu li {
-	float: left;
-	display: inline;
-	
+  display: inline-block;
+	float: none;
 }
 #menu a {
-	display: inline-block;
-    position: relative;
+  position:relative;
 	line-height: 45px;
 	padding: 0 16px;
 	text-decoration: none;
 	color: #FFFFFF;
 	font-size: 17px;
-    width: 100%;
+  width: 100%;
+  opacity: 0.8;
 }
+
+#menu a:hover{
+  opacity: 1;
+  transition: opacity 300ms, transform 300ms;
+}
+
 
 a::after {
   content: '';
@@ -57,63 +62,6 @@ a::after {
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
 }
-
-
-
-a:hover::after,
-a:focus::after {
-  opacity: 1;
-  transform: translate3d(0, 0.2em, 0);
-}
-
-/* Scale from center */
-li:nth-child(1) a::after {
-    opacity: 1;
-    transform: scale(0);
-    transform-origin: center;
-  }
-  
-  li:nth-child(1) a:hover::after,
-  li:nth-child(1) a:focus::after{
-    transform: scale(1);
-  }
-
-/* Scale from center */
-li:nth-child(2) a::after {
-    opacity: 1;
-    transform: scale(0);
-    transform-origin: center;
-  }
-  
-  li:nth-child(2) a:hover::after,
-  li:nth-child(2) a:focus::after{
-    transform: scale(1);
-  }
-
-/* Scale from center */
-li:nth-child(3) a::after {
-  opacity: 1;
-  transform: scale(0);
-  transform-origin: center;
-}
-
-li:nth-child(3) a:hover::after,
-li:nth-child(3) a:focus::after{
-  transform: scale(1);
-}
-
-/* Scale from center */
-li:nth-child(4) a::after {
-    opacity: 1;
-    transform: scale(0);
-    transform-origin: center;
-  }
-  
-  li:nth-child(4) a:hover::after,
-  li:nth-child(4) a:focus::after{
-    transform: scale(1);
-  }
-
 
 #menu input {
 	display: none;
@@ -131,6 +79,9 @@ li:nth-child(4) a::after {
 	position: absolute;
 	left: 35px
 }
+.menu-item li a{
+  font-family: 'Didact Gothic', sans-serif;
+}
 
 
 #animation-name{
@@ -141,12 +92,29 @@ li:nth-child(4) a::after {
     text-align: center;
 }
 
-.menu-item li a{
-    font-family: 'Didact Gothic', sans-serif;
-}
+
 
 h1{
+    width: 50%;
     position: relative;
     font-size: 60px;
     color: #FFF;
+    overflow: hidden;
+    border-right: .15em solid orangered;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .10em;
+    animation: typing 4.1s steps(20,end), 
+    blink-caret .5s step-end infinite;
+
+}
+
+@keyframes typing {
+  from {width: 0;}
+  to {width: 50%;}
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orangered }
 }
