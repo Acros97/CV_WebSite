@@ -1,10 +1,14 @@
-// Menu bar animation
-function updatemenu() {
-    if (document.getElementById('responsive-menu').checked == true) {
-      document.getElementById('menu').style.borderBottomRightRadius = '0';
-      document.getElementById('menu').style.borderBottomLeftRadius = '0';
-    }else{
-      document.getElementById('menu').style.borderRadius = '10px';
-    }
-  }
+var videoPaused = false;
+  // Stop video 
+document.addEventListener('keydown',function(event){
   
+  var video = document.getElementById('myVideo');
+  if(!videoPaused && event.key == "p"){
+    video.pause();
+    videoPaused = true;
+  }else if (videoPaused && event.key == 'p'){
+    video.play();
+    videoPaused = false;
+  }
+      
+});
