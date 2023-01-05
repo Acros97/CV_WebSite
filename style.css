@@ -118,3 +118,16 @@ h1{
   from, to { border-color: transparent }
   50% { border-color: orangered }
 }
+
+nav .stop {
+  float: right;
+  position: relative;  
+  
+}
+
+nav .stop .pkey{
+  width: 13px;
+  height: 15px;
+  border-style: solid;
+  padding: 5px;
+}
