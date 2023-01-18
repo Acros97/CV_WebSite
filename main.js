@@ -1,3 +1,6 @@
+
+
+/*
 var videoPaused = false;
   // Stop video 
 document.addEventListener('keydown',function(event){
@@ -6,9 +9,11 @@ document.addEventListener('keydown',function(event){
   if(!videoPaused && event.key == "p"){
     video.pause();
     videoPaused = true;
+
   }else if (videoPaused && event.key == 'p'){
     video.play();
     videoPaused = false;
   }
       
 });
+*/

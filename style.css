@@ -1,11 +1,11 @@
-/* Video style */
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-  }
+
+
+body{
+  background: #000428;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
 
   /* Menu */
  
@@ -80,49 +80,52 @@ a::after {
 	left: 35px
 }
 .menu-item li a{
-  font-family: 'Didact Gothic', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 
-#animation-name{
+
+.name{
+  color: white;
     font-family: 'Source Code Pro', monospace;
-    font-size: 56px;
-    margin-top: 60px;
-    padding-top: 20px;
-    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 40px;
+    text-align: left;
 }
 
 
 
-h1{
-    width: 50%;
-    position: relative;
-    font-size: 60px;
-    color: #FFF;
-    overflow: hidden;
-    border-right: .15em solid orangered;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .10em;
-    animation: typing 4.1s steps(20,end), 
-    blink-caret .5s step-end infinite;
-
+.profesion{
+  margin: 0 auto;
+  font-size: 40px;
+  font-family: 'Space Grotesk', sans-serif;
+  margin-top: 60px;
+  margin-left: 40px;
+  padding-top: 20px;
+  text-align: left;
+  
+  background: #C5D4E3;
+  background: linear-gradient(to right, #C5D4E3 0%, #FF40D2 50%, #991D63 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-@keyframes typing {
-  from {width: 0;}
-  to {width: 50%;}
+.description{
+  color: #FFF;
+  margin: 0 auto;
+  font-size: 25px;
+  margin-top: 30px;
+  margin-left: 40px;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orangered }
-}
 
 nav .stop {
   float: right;
-  position: relative;  
-  
+  position: fixed;  
+  bottom: 0px;
+  right: 0px;
 }
 
 nav .stop .pkey{
@@ -131,3 +134,6 @@ nav .stop .pkey{
   border-style: solid;
   padding: 5px;
 }
+
+
+

@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cookie&family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>CV Daniel Fros</title>
 
 </head>
 <body>
-    <!--Video-->
-    <video autoplay muted loop id="myVideo" >
-        <source src="media/video.mp4" type="video/mp4">
-    </video>
+    <!-- Parallax Star -->
 
 
 
@@ -39,15 +38,28 @@
 
         <!--Main-->
         <div class="presentation">
-            <div class="name">
-                <h1 id="animation-name">DANIEL FROS</h1>
+            <div class="profesion">
+                 Web Programmmer. <br>
+                .NET Developer.
             </div>
+            <div class="name" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">               
+                <h1>[Daniel Fros]</h1>
+            </div>
+            <div class="description">
+                Enthusiast programmer who loves <br> web and desktop solutions.
+            </div>
+
         </div>
 
 
 
     </div>
     
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="main.js"></script>
 </body>
 </html>
