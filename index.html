@@ -13,8 +13,14 @@
     <title>CV Daniel Fros</title>
 
 </head>
-<body>
-    <!-- Parallax Star -->
+<body >
+    
+
+    
+    <!--Video-->
+    <video autoplay muted loop id ="myVideo" >
+        <source src="media/video.mp4" type="video/mp4">
+    </video>
 
 
 
@@ -29,21 +35,19 @@
                 <li><a href="#Contact">Contact</a></li>
             </ul>
 
-            <div class="stop">
-                <h3 class = "pkey">P</h3>
-                <p>Stop animation</p>
+            <div class="stop">               
+                <p>[P] Key to stop animation</p>
             </div>
 
         </nav>      
 
         <!--Main-->
-        <div class="presentation">
+        <div class="presentation" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <div class="profesion">
                  Web Programmmer. <br>
                 .NET Developer.
             </div>
-            <div class="name" data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom">               
+            <div class="name" >               
                 <h1>[Daniel Fros]</h1>
             </div>
             <div class="description">
@@ -55,10 +59,39 @@
 
 
     </div>
+
+<div class="content">
+<section class="skills" data-aos="fade-up"
+data-aos-anchor-placement="center-center" >
+<img src="media/skills.png" alt="">
+<div class="title">
+    <h2 id="mySkills">I code with:</h2>
+</div>    
+
+<div class="techSkills">
+    <ul class="techSkillsContainer">
+        <li class="csharp" data-tip = "CSharp">
+            <img src="media/csharp.png" alt="" style="width: 40px; height: 40px;">
+        </li>
+        <li class="sql" data-tip="sql">
+            <img src="media/sql.png" alt="" style="width: 40px; height: 40px;">
+        </li>
+    </ul>
+</div>
+
+</section>
+
+</div>
+
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+AOS.init({
+    duration:1200,
+
+});
+
     </script>
     <script src="main.js"></script>
 </body>

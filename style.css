@@ -1,10 +1,21 @@
+/* Video style */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  opacity: 0.1;
+}
+
 
 
 body{
   background: #000428;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  background: linear-gradient(to right, #004e92, #000428) o; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: 1700px;
 }
 
   /* Menu */
@@ -126,14 +137,56 @@ nav .stop {
   position: fixed;  
   bottom: 0px;
   right: 0px;
+  font-family: 'Space Grotesk', sans-serif;
+  margin-right: 10px;
+  font-size: 13px;
 }
 
-nav .stop .pkey{
-  width: 13px;
-  height: 15px;
-  border-style: solid;
-  padding: 5px;
+
+/* Skills section */
+body .content .skills{
+  margin-top: 120px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  
+
 }
+
+body .content .skills img{
+  width: 35px;
+  height: 35px;
+  padding-right: 15px;
+  flex: 0 1 auto;
+  align-self: auto;
+  margin: 0;
+  padding: 0;
+  
+}
+
+#mySkills{
+  color: #FFF;
+  font-family: 'Space Grotesk', sans-serif;
+  text-align: center;
+  flex: 0 1 auto;
+  align-self: auto;
+  margin: 5px 15px;
+  padding: 0;
+
+}
+
+
+.techSkills{
+display: inline-block;
+list-style: none;
+width: 100%;
+margin-left:  120px;
+padding: 0 ;
+
+}
+
 
 
 

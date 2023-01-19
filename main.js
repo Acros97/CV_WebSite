@@ -1,6 +1,4 @@
 
-
-/*
 var videoPaused = false;
   // Stop video 
 document.addEventListener('keydown',function(event){
@@ -16,4 +14,3 @@ document.addEventListener('keydown',function(event){
   }
       
 });
-*/
