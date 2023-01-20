@@ -5,7 +5,7 @@
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  width: 100%;
+
   opacity: 0.1;
 }
 
@@ -166,7 +166,7 @@ body .content .skills img{
   
 }
 
-#mySkills{
+.title h2{
   color: #FFF;
   font-family: 'Space Grotesk', sans-serif;
   text-align: center;
@@ -178,15 +178,29 @@ body .content .skills img{
 }
 
 
+
+
 .techSkills{
-display: inline-block;
 list-style: none;
 width: 100%;
 margin-left:  120px;
 padding: 0 ;
-
+margin: 0 auto;
 }
 
 
 
+.techSkillsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.techSkillsContainer li {
+  margin: 0 13px;
+  align-self: center;
+  
+}
 
