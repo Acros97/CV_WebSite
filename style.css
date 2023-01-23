@@ -239,9 +239,9 @@ margin: 0 auto;
 }
 
 .box{
-  font-size: 15px;
-  width: 20%;
-  line-height: 30px;
+  font-size: 20px;
+  width: 100%;
+  line-height: 25px;
   border: #FFF solid 1px; 
   margin: 40px;
   padding: 30px;
