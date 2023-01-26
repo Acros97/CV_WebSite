@@ -102,6 +102,14 @@ a::after {
   font-family: 'Space Grotesk', sans-serif;
 }
 
+#cv{
+  
+  background: rgb(33,139,189);
+  background: linear-gradient(90deg, rgba(33,139,189,1) 0%, rgba(21,107,179,1) 40%, rgba(31,20,150,1) 99%);
+  border: 1px solid rgb(33,139,189);
+  border-radius: 1000px;
+  transition: 0.3s;
+}
 
 
 .name{
@@ -133,7 +141,7 @@ a::after {
 .description{
   color: #FFF;
   margin: 0 auto;
-  font-size: 25px;
+  font-size: 27px;
   margin-top: 30px;
   margin-left: 40px;
   font-family: 'Space Grotesk', sans-serif;
@@ -182,11 +190,28 @@ body .content .skills img{
   align-self: auto;
   margin: 5px 15px;
   padding: 0;
-
+  font-size: 30px;
+  background: #C5D4E3;
+  background: linear-gradient(to right, #C5D4E3 0%, #FF40D2 50%, #991D63 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
+.title h3 {
+  color: #FFF;
+  font-family: 'Space Grotesk', sans-serif;
+  text-align: center;
+  flex: 0 1 auto;
+  align-self: auto;
+  margin: 5px 15px;
+  padding: 0;
+}
 
-
+.skills{
+  border: #FFF solid 1px; 
+  margin: 40px;
+  padding: 30px;
+}
 
 .techSkills{
 list-style: none;
@@ -236,6 +261,10 @@ margin: 0 auto;
   -ms-flex-align: start;
   align-items: flex-start;
  
+}
+
+.MeContainer .text p {
+  font-size: 22px;
 }
 
 .box{
