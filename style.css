@@ -4,8 +4,6 @@
   right: 0;
   bottom: 0;
   min-width: 100%;
-
-
   opacity: 0.1;
 }
 
@@ -42,7 +40,7 @@
 	padding: 0;
 	list-style: none;
   text-align: center;
-	  
+  
 }
 #menu ul {
 	width: 100%;  
@@ -58,7 +56,7 @@
 	padding: 0 16px;
 	text-decoration: none;
 	color: #FFFFFF;
-	font-size: 17px;
+	font-size: 18px;
   width: 100%;
   opacity: 0.8;
 }
@@ -104,9 +102,8 @@ a::after {
 
 #cv{
   
-  background: rgb(33,139,189);
-  background: linear-gradient(90deg, rgba(33,139,189,1) 0%, rgba(21,107,179,1) 40%, rgba(31,20,150,1) 99%);
-  border: 1px solid rgb(33,139,189);
+  background: #C5D4E3;
+  background: linear-gradient(153deg, #C5D4E3 0%, #FF40D2 30%, #991D63 100%);
   border-radius: 1000px;
   transition: 0.3s;
 }
@@ -272,7 +269,7 @@ margin: 0 auto;
   width: 100%;
   line-height: 25px;
   border: #FFF solid 1px; 
-  margin: 40px;
+  margin: 48px;
   padding: 30px;
   -webkit-order: 0;
   -ms-flex-order: 0;
