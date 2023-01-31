@@ -7,6 +7,15 @@
   opacity: 0.1;
 }
 
+/* JetBrains Font */ 
+@font-face {
+  font-family: 'JetBrainsMono';
+  src:url('font/jetbrains/webfonts/JetBrainsMono-Bold.woff2') format('woff2'),
+      url('font/jetbrains/ttf/JetBrainsMono-Bold.ttf') format('ttf');
+      
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 .header{
@@ -102,8 +111,8 @@ a::after {
 
 #cv{
   
-  background: #C5D4E3;
-  background: linear-gradient(153deg, #C5D4E3 0%, #FF40D2 30%, #991D63 100%);
+  background: rgb(66,64,255);
+background: linear-gradient(150deg, rgba(66,64,255,1) 47%, rgba(137,31,223,1) 99%);
   border-radius: 1000px;
   transition: 0.3s;
 }
@@ -111,7 +120,8 @@ a::after {
 
 .name{
   color: white;
-    font-family: 'Source Code Pro', monospace;
+    /*font-family: 'Source Code Pro', monospace;*/
+    font-family: 'JetBrainsMono'; 
     font-size: 30px;
     margin-top: 30px;
     margin-left: 40px;
@@ -155,10 +165,14 @@ nav .stop {
   font-size: 13px;
 }
 
+.Me{
+  padding-top: 30px;
+}
+
 
 /* Skills section */
 body .content .skills{
-  margin-top: 30px;
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -181,22 +195,21 @@ body .content .skills img{
 
 .title h2{
   color: #FFF;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'JetBrainsMono';
   text-align: center;
   flex: 0 1 auto;
   align-self: auto;
   margin: 5px 15px;
   padding: 0;
   font-size: 30px;
-  background: #C5D4E3;
-  background: linear-gradient(to right, #C5D4E3 0%, #FF40D2 50%, #991D63 100%);
+  background: whitesmoke;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .title h3 {
   color: #FFF;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'JetBrainsMono';
   text-align: center;
   flex: 0 1 auto;
   align-self: auto;
@@ -261,7 +274,9 @@ margin: 0 auto;
 }
 
 .MeContainer .text p {
-  font-size: 22px;
+  font-size: 20px;
+  font-family: 'Space Grotesk', sans-serif;
+  line-height: 28px;
 }
 
 .box{
@@ -352,36 +367,37 @@ margin: 0 auto;
 .titleContact h2{
   
  color: #FFF;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'JetBrainsMono';
   text-align: center;
   flex: 0 1 auto;
   align-self: auto;
   margin: 5px 15px;
   padding: 0;
   font-size: 30px;
-  background: #C5D4E3;
-  background: linear-gradient(to right, #C5D4E3 0%, #FF40D2 50%, #991D63 100%);
+  background: whitesmoke;
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .form{
-  margin-top: 10px;
-  margin-left: 35px;
-  
-  line-height: 35px;
 
+
+  margin: 50px 300px;
   -webkit-order: 0;
   -ms-flex-order: 0;
   order: 0;
   text-decoration:none;
 	text-shadow:0px 1px 0px;
+
+  
+
 }
 
 .form input {
   border-radius: 5px;
 -moz-border-radius: 5px;
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'JetBrainsMono';
 color: #5a5d5f;
 padding: 8px;
 margin-top: 10px;
@@ -390,7 +406,7 @@ margin-top: 10px;
 .form textarea {
   border-radius: 6px;
 -moz-border-radius: 6px;
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'JetBrainsMono';
 color: #5a5d5f;
 }
 
@@ -405,19 +421,19 @@ color: #5a5d5f;
 	cursor:pointer;
   color:#ffffff;
   font-weight:bold;
-	padding:6px 24px;
-  margin-right: 45px;
+	padding:10px 30px;
+margin: 20px 0;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #9b14b3;
 }
 
 .form #name{
-  width: 90%;
+  width: 97.5%;
 }
 .form #email{
-  width: 90%;
+  width: 97.5%;
 }
 
 .form textarea {
-  width: 90%;
+  width: 100%;
 }
