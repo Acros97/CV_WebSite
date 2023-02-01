@@ -14,3 +14,7 @@ document.addEventListener('keydown',function(event){
   }
       
 });
+
+
+var getTagYear = document.getElementById('currentYear');
+ currentYear.innerHTML = new Date().getFullYear() + ". Daniel Fros";
