@@ -35,35 +35,24 @@ window.onresize = function(){
 
 // ------------ Scolling Menu ------------
 
-function SkillMenuResponsive(){
-  if(window.innerWidth >= 1115)
-    window.scrollTo({top: 1000, behavior: 'smooth'});
-  if(window.innerWidth >= 975)
-    window.scrollTo({top: 200, behavior: 'smooth'});
-    
-  if(window.innerWidth >= 892)
-    window.scrollTo({top: 1200, behavior: 'smooth'});
-  if(window.innerWidth >= 682)
-    window.scrollTo({top: 1350, behavior: 'smooth'});  
-
-}
-
-function ContactMenuResponsive(){
-  if(window.innerWidth >= 1115)
-    window.scrollTo({top: 1500,behavior: 'smooth'});
-  if(window.innerWidth >= 892)
-    window.scrollTo({top: 1600, behavior: 'smooth'});  
-  if(window.innerWidth >= 682)
-    window.scrollTo({top: 1850, behavior: 'smooth'}); 
-
-}
-
 // About me
 document.getElementById('MeBtn').addEventListener('click',function(){
-  window.scrollTo({top: 560, behavior: 'smooth' })
+  document.querySelector('#AboutDiv').scrollIntoView({behavior: 'smooth'})
 });
+
+
 // Skills 
-document.getElementById('mySkills').addEventListener('click',SkillMenuResponsive);
+document.getElementById('mySkills').addEventListener('click',function(){
+  document.querySelector('#skillDiv').scrollIntoView({
+    behavior: 'smooth'
+  })
+}); 
+
 
 //Contact 
-document.getElementById('contact').addEventListener('click',ContactMenuResponsive);
+document.getElementById('contact').addEventListener('click',function(){
+  document.querySelector('#contactDiv').scrollIntoView({
+    behavior: 'smooth'
+  })
+});
+
