@@ -219,15 +219,14 @@ body .content .skills img{
 
 .skills{
   border: #FFF solid 1px; 
-  margin: 40px;
+  margin: auto 0;
   padding: 30px;
 }
 
 .techSkills{
 list-style: none;
 width: 100%;
-margin-left:  120px;
-padding: 0 ;
+padding: 0;
 margin: 0 auto;
 }
 
