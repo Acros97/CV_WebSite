@@ -19,14 +19,14 @@ document.addEventListener('keydown',function(event){
 var getTagYear = document.getElementById('currentYear');
  currentYear.innerHTML = new Date().getFullYear() + ". Daniel Fros";
 
-// get scrolled pixels -- Enabled OPTIONAL
+// get scrolled pixels -- OPTIONAL
 
   /* window.onscroll = function(e){
     console.log(window.scrollY);
   }; */
 
 
-// get device min width
+// get device min width -- OPTIONAL
 window.onresize = function(){
   console.log("Width in px: " + window.innerWidth);
 
