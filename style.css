@@ -3,7 +3,6 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  min-width: 100%;
   opacity: 0.1;
 }
 
@@ -279,12 +278,10 @@ margin: 0 auto;
 }
 
 .box{
-  font-size: 16px;
   width: 100%;
-  line-height: 25px;
-  border: #FFF solid 1px; 
-  margin: 48px;
-  padding: 30px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+
   -webkit-order: 0;
   -ms-flex-order: 0;
   order: 0;
@@ -316,30 +313,25 @@ margin: 0 auto;
   align-items: flex-start;
 }
 
-.boxContainer .image{
+.cardElement{
   -webkit-order: 0;
   -ms-flex-order: 0;
   order: 0;
   -webkit-flex: 0 1 auto;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
+  
   -webkit-align-self: auto;
   -ms-flex-item-align: auto;
   align-self: auto;
+  margin: 15px;
+  padding: 25px;
+  border: #FFF solid 2px; 
 }
 
-.boxContainer .text{
-  -webkit-order: 0;
-  -ms-flex-order: 0;
-  order: 0;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -webkit-align-self: auto;
-  -ms-flex-item-align: auto;
-  align-self: auto;
-  margin-left: 10px;
-}
+
+
+
 
 .contact{
   margin-bottom: 50px;
