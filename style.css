@@ -204,13 +204,12 @@ body .content .skills{
 
 }
 
-body .content .skills img{
+body .title img{
+  display: inline-block;
   width: 35px;
   height: 35px;
   padding-right: 15px;
-  flex: 0 1 auto;
-  align-self: auto;
-  margin: 0;
+  margin-top: 10px;
   padding: 0;
   
 }
@@ -218,12 +217,12 @@ body .content .skills img{
 .title h2{
   color: #FFF;
   font-family: 'JetBrainsMono';
-  text-align: center;
+  text-align: left;
   flex: 0 1 auto;
   align-self: auto;
-  margin: 5px 15px;
+  margin-left: 10px;
   padding: 0;
-  font-size: 30px;
+  font-size: 25px;
   background: whitesmoke;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -239,58 +238,33 @@ body .content .skills img{
   padding: 0;
 }
 
-.skills{
-  border: #FFF solid 1px; 
-  margin: auto 0;
-  padding: 30px;
-}
 
-.techSkills{
+
+#skillDiv{
 list-style: none;
-width: 100%;
+border: #FFF solid 1px;
+margin: 12px;
 padding: 0;
-margin: 0 auto;
+
 }
-
-
 
 .techSkillsContainer{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-  
+  margin-right: 20px;
 }
 
 .techSkillsContainer li {
   margin: 0 13px;
-  align-self: center;
+  display: inline-block;
   
 }
+
+
 
 
 .MeContainer{
   color: #FFF;
   font-family: 'Space Grotesk', sans-serif;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-content: stretch;
-  -ms-flex-line-pack: stretch;
-  align-content: stretch;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+
  
 }
 
@@ -359,6 +333,7 @@ margin: 0 auto;
 .contact{
   margin-bottom: 50px;
   padding-bottom: 40px;
+  height: 650px;
 }
 
 
@@ -429,12 +404,13 @@ margin-top: 10px;
 -moz-border-radius: 6px;
 font-family: 'JetBrainsMono';
 color: #5a5d5f;
+height: 300px;
 }
 
 .form #sendBtn{
   float: right;
   background-image: linear-gradient(to right, #1D976C 0%, #93F9B9  51%, #1D976C  100%);
-  margin: 10px;
+  margin: 12px 0;
   padding: 15px 45px;
   text-align: center;
 	border-radius:10px;
@@ -442,7 +418,7 @@ color: #5a5d5f;
   background-size: 200% auto;
   display:inline-block;
 	cursor:pointer;
-  color:#fff;
+  color:#292928;
   margin-bottom: 50px;
 	text-decoration:none;
   border-color: #93F9B9;
@@ -450,7 +426,7 @@ color: #5a5d5f;
 
 #sendBtn:hover{
   background-position: right center; /* change the direction of the change here */
-  color: #fff;
+  color:#292928;
   text-decoration: none;
 }
 
